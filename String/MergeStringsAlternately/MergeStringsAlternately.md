@@ -1,40 +1,25 @@
 # Approach
+
 Creating a new string by adding char by char if the i-th exists in the currenty string
+
 # Complexity
+
 - Time complexity:
-O(n)
+  O(n)
 
 - Space complexity:
-O(n)
+  O(n)
 
 # Code
+
 ```js
-public class Solution {
-    public int Candy(int[] ratings) {
-        
-        int[] result = new int[ratings.Length];
-        Array.Fill(result, 1);
-
-        for(int i = 1; i< ratings.Length;i++){
-
-            if(ratings[i] > ratings[i-1]){
-                result[i] = result[i - 1] + 1;
-            }
-        }
-
-
-        int total = 0;
-        for(int i  = ratings.Length-2;i>=0;i--){
-
-            if(ratings[i] > ratings[i+1]){
-                result[i] = Math.Max(result[i],result[i+1]+1);
-            }
-
-            total+=result[i+1];
-        }
-
-        total+=result[0];
-        return total;
+const mergeAlternately = (word1, word2) => {
+    let r = "";
+    let k = Math.max(word1.length, word2.length);
+    for (let i = 0; i < k; i++) {
+        if (word1[i]) r += word1[i];
+        if (word2[i]) r += word2[i];
     }
-}
+    return r;
+};
 ```
