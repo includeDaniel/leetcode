@@ -1,15 +1,21 @@
-function reverseVowels(s: string): string {
-    let string = s.split(""), v = [], p = []
-    for(let i = 0; i < string.length; i++) {
-        const l = string[i].toLowerCase()
-        if( l == "a" || l == "e" || l == "i" || l == "o" || l == "u" ) {
-            v.push(string[i])
-            p.push(i)
+const reverseVowels = (s: string): string => {
+    const set = new Set(["a", "e", "i", "o", "u"]);
+    let i = 0,
+        j = s.length - 1,
+        temp,
+        res = [...s];
+    while (i < j) {
+        const vI = set.has(s[i].toLowerCase());
+        const vJ = set.has(s[j].toLowerCase());
+        if (vI && vJ) {
+            temp = res[i];
+            res[i] = res[j];
+            res[j] = temp;
+            i++;
+            j--;
         }
+        if (!vI) i++;
+        if (!vJ) j--;
     }
-    v = v.reverse()
-    for(let i = 0; i < p.length; i++) {
-        string[p[i]] = v[i]
-    }
-    return string.join("")
+    return res.join("");
 };
