@@ -10,6 +10,10 @@ Using two pointer to analyze if the char is a vowel and switch the earliest vowe
 - Space complexity:
   O(n)
 
+# Leetcode Rank
+
+- Easy
+
 # Code
 
 ```js

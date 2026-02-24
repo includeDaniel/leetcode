@@ -10,6 +10,10 @@ Creating a new string by adding char by char if the i-th exists in the currenty 
 - Space complexity:
   O(n)
 
+# Leetcode Rank
+
+- Easy
+
 # Code
 
 ```js

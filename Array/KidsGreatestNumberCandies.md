@@ -15,6 +15,10 @@ if not push false
 - Space complexity:
   O(n)
 
+# Leetcode Rank
+
+- Easy
+
 # Code
 
 ```js

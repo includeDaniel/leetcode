@@ -15,6 +15,10 @@ Return the prefix string with a length of gcdLength of either str1 or str2 as th
 - Space complexity:
   O(m + n)
 
+# Leetcode Rank
+
+- Easy
+
 # Code
 
 ```js
