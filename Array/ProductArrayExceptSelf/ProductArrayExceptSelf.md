@@ -1,8 +1,8 @@
 # Approach
 
-Using the prefix-postfix approach, which basically uses two separate iterations to form two arrays containing the left and right elements multiplied by themselves, considering a fixed point.
+Using the prefix-postfix approach, which basically uses two separate iterations to form a array containing the left and right elements multiplied by themselves, considering a fixed point.
 
-After structuring, these two arrays only need to multiply the current positions to obtain the product array, excluding the current number.
+After structuring this array just return him.
 
 (Note: this problem has a time complexity of O(n) and cannot be solved with the division operation.)
 
