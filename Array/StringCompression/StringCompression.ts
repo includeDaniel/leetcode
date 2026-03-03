@@ -1,14 +1,21 @@
 function compress(chars: string[]): number {
-    let s = "";
-    let temp = "";
-    for (let i = 0; i < chars.length; i++) {
-        temp += chars[i];
-        if (chars[i + 1] != chars[i]) {
-            s += temp[0] + (temp.length != 1 ? temp.length : "");
-            temp = "";
+    let i = 0;
+    let write = 0;
+    while (i < chars.length) {
+        let curr = chars[i];
+        let count = 0;
+        while (i < chars.length && chars[i] == curr) {
+            i++;
+            count++;
+        }
+        chars[write] = curr;
+        write++;
+        if (count > 1) {
+            for (let digit of count.toString().split("")) {
+                chars[write] = digit;
+                write++;
+            }
         }
     }
-
-    s.split("").forEach((c, i) => (chars[i] = c));
-    return s.length;
+    return write;
 }
