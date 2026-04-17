@@ -18,6 +18,7 @@ Repository dedicated to solving LeetCode problems and studying data structures.
 
 - [Container With Most Water](./TwoPointer/ContainerWithMostWater/ContainerWithMostWater.md)
 - [Increasing Triplet Subsequence](./Array/IncreasingTripletSubsequence/IncreasingTripletSubsequence.md)
+- [Longest Subarray of 1's After Deleting One Element](./SlidingWindow/LongestSubarrayOfOnesAfterDeletingOneElement/LongestSubarrayOfOnesAfterDeletingOneElement.md)
 - [Max Consecutive Ones III](./SlidingWindow/MaxConsecutiveOnesIII/MaxConsecutiveOnesIII.md)
 - [Max Number of K-Sum Pairs](./TwoPointer/MaxNumberOfK-SumPairs/MaxNumberOfK-SumPairs.md)
 - [Maximum Number of Vowels in a Substring of Given Length](./SlidingWindow/MaximumVowelsSubarray/MaximumVowelsSubarray.md)
