@@ -13,7 +13,8 @@ The approach is with three pointers pointing to the previous, current and next n
   O(n)
 
 - Space complexity:
-  O(1)
+  O(1) - Iteration
+  O(n) - Recursive
 
 # Leetcode Rank
 
