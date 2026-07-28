@@ -10,6 +10,10 @@ This approach uses three pointers, the strategy to fing the middle of the linked
 - Space complexity:
   O(1)
 
+# Leetcode Rank
+
+- Medium
+
 # Code
 
 ```typescript []

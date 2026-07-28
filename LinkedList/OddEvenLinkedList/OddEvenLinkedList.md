@@ -15,6 +15,10 @@ The solution lays on repointer the list nodes to his correct node, no need to de
 - Space complexity:
   O(1)
 
+# Leetcode Rank
+
+- Medium
+
 # Code
 
 ```typescript []
