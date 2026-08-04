@@ -1,3 +1,22 @@
+# Approach
+
+This approach it's about to split the linked list in the middle and reverse the second part of the linked list and after that you just need to iterate again adding the two heads and checking if are the max value until this iteration.
+
+# Complexity
+
+- Time complexity:
+  O(n)
+
+- Space complexity:
+  O(1)
+
+# Leetcode Rank
+
+- Medium
+
+# Code
+
+```typescript []
 /**
  * Definition for singly-linked list.
  * class ListNode {
@@ -35,3 +54,4 @@ function pairSum(head: ListNode | null): number {
     }
     return max;
 }
+```
