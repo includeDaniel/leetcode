@@ -7,10 +7,10 @@ function goodNodes(root: TreeNode | null): number {
             counter++;
         }
 
-        if (root.left) findNodes(root.left, max);
-        if (root.right) findNodes(root.right, max);
+        findNodes(root.left, max);
+        findNodes(root.right, max);
     }
 
-    findNodes(root, -Number.MAX_VALUE);
+    findNodes(root, -Infinity);
     return counter;
 }
